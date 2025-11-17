@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StarSpotLite — Home</title>
+  <meta name="description" content="StarSpotLite — International entertainment news, latest videos and best deals.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">⭐ StarSpotLite</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="deals.html">Today Best Deal</a>
+        <a href="health.html">Best Health Product</a>
+        <a href="children.html">Best Ink Club</a>
+        <a href="ebook.html" class="btn">E-Books</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1) YouTube channel section (TOP) -->
+    <section class="yt-top container">
+      <div class="yt-left">
+        <h1>StarSpotLite — Official Channel</h1>
+        <p class="muted">Latest from our YouTube channel. Subscribe for daily entertainment & celebrity coverage.</p>
+        <div class="yt-cta">
+          <a class="btn" href="{{YOUTUBE_CHANNEL_URL}}" target="_blank">Visit Channel</a>
+          <a class="btn outline" href="{{YOUTUBE_CHANNEL_URL}}?sub_confirmation=1" target="_blank">Subscribe</a>
+        </div>
+      </div>
+      <div class="yt-right">
+        <!-- Replace VIDEO_ID with latest video id or leave blank to show placeholder -->
+        <iframe id="ytFrame" src="https://www.youtube.com/embed/{{VIDEO_ID}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- 2) Blog snippets under YouTube -->
+    <section class="container blog-snips">
+      <h2>Latest Posts</h2>
+      <div class="grid">
+        <!-- Repeat for 6 posts -->
+        <article class="card">
+          <img src="assets/post1.jpg" alt="">
+          <h3><a href="post-sample.html">CarryMinati का नया Roast क्यों ट्रेंड में है?</a></h3>
+          <p class="muted">18 Nov 2025 • 3 min read</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/post2.jpg" alt="">
+          <h3><a href="post-sample.html">MrBeast ने फिर किया बड़ा Surprise — Fans stunned!</a></h3>
+          <p class="muted">17 Nov 2025 • 4 min read</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/post3.jpg" alt="">
+          <h3><a href="post-sample.html">Taylor Swift — Tour dates और रिपोर्ट</a></h3>
+          <p class="muted">16 Nov 2025 • 2 min read</p>
+        </article>
+
+        <!-- add 3 more similar cards -->
+      </div>
+      <p class="center"><a class="btn" href="blog.html">Read all posts</a></p>
+    </section>
+
+    <!-- 3) Four main page tiles -->
+    <section class="container tiles">
+      <div class="tile-grid">
+        <a class="tile" href="deals.html">
+          <h3>Today Best Deal</h3>
+          <p>Daily best offers — Digistore24 products (View Details → Redirect)</p>
+        </a>
+        <a class="tile" href="health.html">
+          <h3>Best Health Product</h3>
+          <p>Top supplements & health picks (affiliate)</p>
+        </a>
+        <a class="tile" href="children.html">
+          <h3>Best Ink Club (Children)</h3>
+          <p>Kids learning, activity books & stationery</p>
+        </a>
+        <a class="tile" href="ebook.html">
+          <h3>E-Book / Notes Store</h3>
+          <p>Your own digital downloads — Pay & Download</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 4) Featured Hero (below tiles) -->
+    <section class="hero container">
+      <article class="hero-card">
+        <img src="assets/hero.jpg" alt="">
+        <div class="hero-body">
+          <h2>Grammy Awards 2024: Winners & Shocking Upsets</h2>
+          <p>This year's ceremony delivered unexpected wins, emotional speeches, and performances that will be remembered for years to come.</p>
+          <p class="muted">Awards • 7 min read • Updated: <time id="time">—</time></p>
+          <a class="btn" href="post-sample.html">Read full story</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> StarSpotLite</div>
+      <div class="muted small">Affiliate Disclosure: Some links are affiliate links. We may earn commission if you buy through them at no extra cost to you.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
